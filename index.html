@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roll</title>
+    
+</head>
+<body>
+    <h1>DICE ROLL SIMULATOR</h1>
+    <div class="dice" id="dice">&#x2684;</div>
+    <button id="rollButton">Roll the Dice</button>
+    <ul id="history">
+        <li>Roll History:</li>
+        <li id="roll1">&#x2680;</li>
+        <li id="roll2">&#x2681;</li>
+        <li id="roll3">&#x2682;</li>
+        <li id="roll4">&#x2683;</li>
+        <li id="roll5">&#x2685;</li>
+    </ul>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .dice {
+            font-size: 100px;
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            display: inline-block;
+            margin: 5px;
+            font-size: 24px;
+        }
+        #history {
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        const dice = document.getElementById('dice');
+        const rollButton = document.getElementById('rollButton');
+        const history = document.getElementById('history');
+        const rolls = [document.getElementById('roll1'), document.getElementById('roll2'), document.getElementById('roll3'), document.getElementById('roll4'), document.getElementById('roll5')];
+        let rollCount = 0;
+        const rollDice = () => {
+            const randomNumber = Math.floor(Math.random() * 6) + 1;
+            dice.innerHTML = `&#x268${randomNumber - 1};`;
+            rolls[rollCount].innerHTML = `&#x268${randomNumber - 1};`;
+            rollCount = (rollCount + 1) % rolls.length;
+        };
+        rollButton.addEventListener('click', rollDice);
+        // Initialize the dice with the first roll
+        rollDice();
+    </script>              
+</body>
+</html>
