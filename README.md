@@ -1,22 +1,24 @@
-# Dice-Roll-Simulator
-This fun project demonstrates how simple web technologies can come together to create an interactive experience:
+# 🧮 Basic Calculator  
 
-✨ Features:
+A simple and responsive calculator built using **HTML**, **CSS**, and **JavaScript**.  
+It performs basic arithmetic operations like addition, subtraction, multiplication, and division with a clean user interface.  
 
-A dice face that updates dynamically on every roll
+---
 
-Roll history tracking (last 5 rolls)
+## 🚀 Features  
+- Perform basic operations: ➕ Addition, ➖ Subtraction, ✖️ Multiplication, ➗ Division  
+- Clear button (**C**) to reset input  
+- Decimal support (e.g., 3.14 + 2.5)  
+- Responsive grid-based button layout  
+- Smooth hover effects for better UX  
 
-Unicode dice characters for a realistic effect
+---
 
-Clean and responsive UI
+## 🛠️ Technologies Used  
+- **HTML5** – Structure of the calculator  
+- **CSS3** – Styling with grid layout  
+- **JavaScript (ES6)** – Logic for operations and button handling  
 
-🔧 Tech Stack:
+---
 
-HTML → structure of the app
-
-CSS → styling for layout and visuals
-
-JavaScript → logic for rolling and updating dice
-
-💡 This project is a great example of how beginners can practice DOM manipulation, event handling, and random number generation while also making something interactive and fun.
+## 📂 Project Structure  
